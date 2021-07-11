@@ -1,0 +1,16 @@
+{
+  "name": "livecoding",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "FP livecoding example SHRI 2021",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node ./index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "moonw1nd",
+  "license": "MIT",
+  "dependencies": {
+    "ramda": "^0.27.1"
+  }
+}
