@@ -1,16 +1,27 @@
 {
   "name": "livecoding",
-  "type": "module",
   "version": "1.0.0",
   "description": "FP livecoding example SHRI 2021",
   "main": "index.mjs",
   "scripts": {
-    "start": "node ./index.mjs",
+    "start": "node -r esm ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "moonw1nd",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^4.1.1",
+    "esm": "^3.2.25",
     "ramda": "^0.27.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "prettier": "^2.3.2",
+    "pretty-quick": "^3.1.1"
   }
 }
