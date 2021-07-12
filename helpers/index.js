@@ -14,28 +14,31 @@ export const readFile = (filename) => {
 
 const printToConsole = console.log;
 
-export const printSearchParam = (color, name, value) => {
+export const printSearchParam = (level, value, name) => {
     let printedValue = value;
+    let color = 'gray';
+
+    if (level === 'success') {
+        color = 'green';
+    } else if (level === 'warn') {
+        color = 'yellow';
+    } else if (level === 'error') {
+        color = 'red';
+    }
 
     if (typeof value === 'object') {
         printedValue = JSON.stringify(value, null, 2);
     }
 
-    printToConsole(`${chalk[color](`[${name}]: `)}${chalk.white(printedValue)}`);
+    printToConsole(`${chalk[color](`[${name}] `)}${chalk.white(printedValue)}`);
 };
 
-export const isValidURL = (str) => {
-    const pattern = new RegExp(
-        '^(https?:\\/\\/)?' + // protocol
-            '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // domain name
-            '((\\d{1,3}\\.){3}\\d{1,3}))' + // OR ip (v4) address
-            '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // port and path
-            '(\\?[;&a-z\\d%_.~+=-]*)?' + // query string
-            '(\\#[-a-z\\d_]*)?$',
-        'i',
-    ); // fragment locator
-
-    return !!pattern.test(str);
-};
-
-export const printEmptyLine = () => printToConsole('\n');
+export const URL_REG_EXP = new RegExp(
+    '^(https?:\\/\\/)?' + // protocol
+        '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // domain name
+        '((\\d{1,3}\\.){3}\\d{1,3}))' + // OR ip (v4) address
+        '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // port and path
+        '(\\?[;&a-z\\d%_.~+=-]*)?' + // query string
+        '(\\#[-a-z\\d_]*)?$',
+    'i',
+); // fragment locator

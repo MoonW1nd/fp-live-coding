@@ -1,18 +1,18 @@
-import { readFile, printSearchParam, isValidURL } from './helpers';
+import { readFile, printSearchParam, URL_REG_EXP } from './helpers';
 
 const fileData = readFile('./data');
 const strings = fileData.split('\n');
 
 for (let i = 0; i < strings.length; i++) {
-    if (!isValidURL(strings[i])) {
-        printSearchParam('red', 'not url string', strings[i]);
+    if (!URL_REG_EXP.test(strings[i])) {
+        printSearchParam('warn', strings[i], 'not url string');
 
         break;
     }
 
     const url = strings[i];
 
-    printSearchParam('green', 'parseUrl', url);
+    printSearchParam('success', url, 'parseUrl');
 
     const parsedUrl = new URL(url);
 
@@ -21,8 +21,8 @@ for (let i = 0; i < strings.length; i++) {
         const skuId = searchParams.get('sku');
         const filters = searchParams.get('glfilter');
 
-        printSearchParam('green', 'skuId and Filters', { skuId, filters });
+        printSearchParam('success', { skuId, filters }, 'skuId and Filters');
 
-        printSearchParam('green', 'write data to file', { url, skuId, filters });
+        printSearchParam('success', { url, skuId, filters }, 'write data to file');
     }
 }
