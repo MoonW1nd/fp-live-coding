@@ -16,7 +16,7 @@ const printToConsole = console.log;
 
 export const printSearchParam = (level, value, name) => {
     let printedValue = value;
-    let color = 'gray';
+    let color = 'black';
 
     if (level === 'success') {
         color = 'green';
@@ -30,7 +30,7 @@ export const printSearchParam = (level, value, name) => {
         printedValue = JSON.stringify(value, null, 2);
     }
 
-    printToConsole(`${chalk[color](`[${name}] `)}${chalk.white(printedValue)}`);
+    printToConsole(`${chalk[color](`[${name}] `)}${chalk.black(printedValue)}`);
 };
 
 export const URL_REG_EXP = new RegExp(

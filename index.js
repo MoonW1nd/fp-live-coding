@@ -1,7 +1,11 @@
 import { readFile, printSearchParam, URL_REG_EXP } from './helpers';
 
+console.clear();
+
+// Получение валидных урлов
 const fileData = readFile('./data');
 const strings = fileData.split('\n');
+const resultData = [];
 
 for (let i = 0; i < strings.length; i++) {
     if (!URL_REG_EXP.test(strings[i])) {
@@ -14,6 +18,7 @@ for (let i = 0; i < strings.length; i++) {
 
     printSearchParam('success', url, 'parseUrl');
 
+    // Парсинг урлов маркета и получение интересующих нас параметров
     const parsedUrl = new URL(url);
 
     if (parsedUrl.protocol === 'https:' && parsedUrl.hostname === 'market.yandex.ru') {
@@ -23,6 +28,9 @@ for (let i = 0; i < strings.length; i++) {
 
         printSearchParam('success', { skuId, filters }, 'skuId and Filters');
 
-        printSearchParam('success', { url, skuId, filters }, 'write data to file');
+        resultData.push({ url, skuId, filters });
     }
 }
+
+// Запись получившейся информации в файл
+printSearchParam('success', resultData, 'write data to file');
