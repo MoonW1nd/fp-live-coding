@@ -8,14 +8,16 @@ const strings = fileData.split('|');
 const resultData = [];
 
 for (let i = 0; i < strings.length; i++) {
-    // Парсинг урлов маркета и получение интересующих нас параметров
+    // Парсим url
     const parsedUrl = new URL(strings[i]);
 
+    // Обрабатываем только https:// url Маркета
     if (
         parsedUrl.protocol === 'https:' &&
         (parsedUrl.hostname === 'market.yandex.ru' ||
         parsedUrl.hostname === 'pokupki.market.yandex.ru')
     ) {
+        // Получаем данные о sku, hostname и pathname
         const { searchParams } = parsedUrl;
         const skuId = searchParams.get('sku');
         const { pathname, hostname } = parsedUrl;
@@ -28,5 +30,5 @@ for (let i = 0; i < strings.length; i++) {
     }
 }
 
-// Вывод результата
+// выводим результат в консоль
 print('green', 'Parsed data', JSON.stringify(resultData, null, 2));
