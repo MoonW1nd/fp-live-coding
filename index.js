@@ -1,4 +1,4 @@
-import { readFile } from './helpers';
+import { print, readFile } from './helpers';
 
 console.clear();
 
@@ -18,12 +18,15 @@ for (let i = 0; i < strings.length; i++) {
     ) {
         const { searchParams } = parsedUrl;
         const skuId = searchParams.get('sku');
-        const filters = searchParams.get('glfilter');
         const { pathname, hostname } = parsedUrl;
 
-        resultData.push({ hostname, pathname, skuId, filters });
+        resultData.push({
+            hostname,
+            pathname,
+            skuId,
+        });
     }
 }
 
-// Запись получившейся информации в файл
-console.log(JSON.stringify(resultData, null, 2));
+// Вывод результата
+print('green', 'Parsed data', JSON.stringify(resultData, null, 2));

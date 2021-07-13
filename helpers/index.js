@@ -14,23 +14,8 @@ export const readFile = (filename) => {
 
 const printToConsole = console.log;
 
-export const print = (level, title, value) => {
-    let printedValue = value;
-    let color = 'black';
-
-    if (level === 'done') {
-        color = 'green';
-    } else if (level === 'progress') {
-        color = 'yellow';
-    } else if (level === 'error') {
-        color = 'red';
-    }
-
-    if (typeof value === 'object') {
-        printedValue = JSON.stringify(value, null, 2);
-    }
-
-    printToConsole(`${chalk[color](`[${title}]: `)}${chalk.black(printedValue)}`);
+export const print = (color, title, value) => {
+    printToConsole(`${chalk[color](`[${title}]\n`)}${chalk.black(value)}`);
 };
 
 export const URL_REG_EXP = new RegExp(
