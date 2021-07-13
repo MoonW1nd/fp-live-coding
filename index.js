@@ -4,25 +4,26 @@ console.clear();
 
 // Получение валидных урлов
 const fileData = readFile('./data');
-const strings = fileData.split('|');
-const resultData = [];
+const urlStrings = fileData.split('|');
 
-for (let i = 0; i < strings.length; i++) {
+const urlsInfo = [];
+
+for (let i = 0; i < urlStrings.length; i++) {
     // Парсим url
-    const parsedUrl = new URL(strings[i]);
+    const url = new URL(urlStrings[i]);
 
     // Обрабатываем только https:// url Маркета
     if (
-        parsedUrl.protocol === 'https:' &&
-        (parsedUrl.hostname === 'market.yandex.ru' ||
-        parsedUrl.hostname === 'pokupki.market.yandex.ru')
+        url.protocol === 'https:' &&
+        (url.hostname === 'market.yandex.ru' ||
+        url.hostname === 'pokupki.market.yandex.ru')
     ) {
         // Получаем данные о sku, hostname и pathname
-        const { searchParams } = parsedUrl;
+        const { searchParams } = url;
         const skuId = searchParams.get('sku');
-        const { pathname, hostname } = parsedUrl;
+        const { pathname, hostname } = url;
 
-        resultData.push({
+        urlsInfo.push({
             hostname,
             pathname,
             skuId,
@@ -30,5 +31,6 @@ for (let i = 0; i < strings.length; i++) {
     }
 }
 
-// выводим результат в консоль
-print('green', 'Parsed data', JSON.stringify(resultData, null, 2));
+// выводим форматированный результат в консоль
+const formatedUrlsInfo = JSON.stringify(urlsInfo, null, 2);
+print('green', 'Market urls info', formatedUrlsInfo);
