@@ -21,11 +21,10 @@ for (let i = 0; i < urlStrings.length; i++) {
         // Получаем данные о sku, hostname и pathname
         const { searchParams } = url;
         const skuId = searchParams.get('sku');
-        const { pathname, hostname } = url;
+        const { hostname } = url;
 
         urlsInfo.push({
             hostname,
-            pathname,
             skuId,
         });
     }
