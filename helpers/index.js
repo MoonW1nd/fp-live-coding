@@ -14,7 +14,7 @@ export const readFile = (filename) => {
 
 const printToConsole = console.log;
 
-export const printSearchParam = (level, value, name) => {
+export const print = (level, title, value) => {
     let printedValue = value;
     let color = 'black';
 
@@ -30,7 +30,7 @@ export const printSearchParam = (level, value, name) => {
         printedValue = JSON.stringify(value, null, 2);
     }
 
-    printToConsole(`${chalk[color](`[${name}] `)}${chalk.black(printedValue)}`);
+    printToConsole(`${chalk[color](`[${title}]: `)}${chalk.black(printedValue)}`);
 };
 
 export const URL_REG_EXP = new RegExp(
