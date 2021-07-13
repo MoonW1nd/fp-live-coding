@@ -18,9 +18,9 @@ export const print = (level, title, value) => {
     let printedValue = value;
     let color = 'black';
 
-    if (level === 'success') {
+    if (level === 'done') {
         color = 'green';
-    } else if (level === 'warn') {
+    } else if (level === 'progress') {
         color = 'yellow';
     } else if (level === 'error') {
         color = 'red';

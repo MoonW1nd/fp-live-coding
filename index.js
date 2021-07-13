@@ -13,7 +13,8 @@ for (let i = 0; i < strings.length; i++) {
 
     if (
         parsedUrl.protocol === 'https:' &&
-        parsedUrl.hostname === 'market.yandex.ru'
+        (parsedUrl.hostname === 'market.yandex.ru' ||
+        parsedUrl.hostname === 'pokupki.market.yandex.ru')
     ) {
         const { searchParams } = parsedUrl;
         const skuId = searchParams.get('sku');
