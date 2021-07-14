@@ -37,4 +37,4 @@ const formatedUrlsInfo = JSON.stringify(urlsInfo, null, 2);
 print('green', 'Urls info', formatedUrlsInfo);
 
 // пишем данные в файл
-writeFile('./urlsInfo', formatedUrlsInfo);
+writeFile('urlsInfo', './', formatedUrlsInfo);
