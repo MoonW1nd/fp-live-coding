@@ -12,8 +12,8 @@ export const readFile = (filename) => {
     return fs.readFileSync(filePath, { encoding: 'utf8' });
 };
 
-export const writeFile = (filename, path, data) => {
-    const filePath = path.join(__dirname, '../', path, filename);
+export const writeFile = (filename, filepath, data) => {
+    const filePath = path.join(__dirname, '../', filepath, filename);
 
     fs.writeFileSync(filePath, data);
 };
