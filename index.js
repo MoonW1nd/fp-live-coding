@@ -1,24 +1,24 @@
-import { print, readFile, writeFile } from './helpers';
+import { log, readFile, writeFile } from './helpers';
 
 console.clear();
 
-// Получение валидных урлов
+// читаем данные из файла
 const fileData = readFile('./data');
 const urlStrings = fileData.split('|');
 
 const urlsInfo = [];
 
 for (let i = 0; i < urlStrings.length; i++) {
-    // Парсим url
+    // парсим url
     const url = new URL(urlStrings[i]);
 
-    // Обрабатываем только https:// url Маркета
+    // обрабатываем только https:// url Маркета
     if (
         url.protocol === 'https:' &&
         (url.hostname === 'market.yandex.ru' ||
         url.hostname === 'pokupki.market.yandex.ru')
     ) {
-        // Получаем данные о sku, hostname и pathname
+        // получаем данные о url
         const { hostname, pathname, protocol, search } = url;
 
         urlsInfo.push({
@@ -33,8 +33,8 @@ for (let i = 0; i < urlStrings.length; i++) {
 // форматируем данные
 const formatedUrlsInfo = JSON.stringify(urlsInfo, null, 2);
 
-// логирум данный
-print('green', 'Urls info', formatedUrlsInfo);
+// логируeм данные
+log('green', 'Urls info', formatedUrlsInfo);
 
 // пишем данные в файл
 writeFile('urlsInfo', './', formatedUrlsInfo);
