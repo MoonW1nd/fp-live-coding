@@ -12,18 +12,14 @@ export const readFile = (filename) => {
     return fs.readFileSync(filePath, { encoding: 'utf8' });
 };
 
+export const writeFile = (filename, data) => {
+    const filePath = path.join(__dirname, '../', filename);
+
+    fs.writeFileSync(filePath, data);
+};
+
 const printToConsole = console.log;
 
 export const print = (color, title, value) => {
-    printToConsole(`${chalk[color](`[${title}]\n`)}${chalk.black(value)}`);
+    printToConsole(`${chalk[color](`[${title}]\n`)}${chalk[color](value)}`);
 };
-
-export const URL_REG_EXP = new RegExp(
-    '^(https?:\\/\\/)?' + // protocol
-        '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // domain name
-        '((\\d{1,3}\\.){3}\\d{1,3}))' + // OR ip (v4) address
-        '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // port and path
-        '(\\?[;&a-z\\d%_.~+=-]*)?' + // query string
-        '(\\#[-a-z\\d_]*)?$',
-    'i',
-); // fragment locator

@@ -1,4 +1,4 @@
-import { print, readFile } from './helpers';
+import { print, readFile, writeFile } from './helpers';
 
 console.clear();
 
@@ -19,17 +19,22 @@ for (let i = 0; i < urlStrings.length; i++) {
         url.hostname === 'pokupki.market.yandex.ru')
     ) {
         // Получаем данные о sku, hostname и pathname
-        const { searchParams } = url;
-        const skuId = searchParams.get('sku');
-        const { hostname } = url;
+        const { hostname, pathname, protocol, search } = url;
 
         urlsInfo.push({
+            protocol,
             hostname,
-            skuId,
+            pathname,
+            query: search,
         });
     }
 }
 
-// выводим форматированный результат в консоль
+// форматируем данные
 const formatedUrlsInfo = JSON.stringify(urlsInfo, null, 2);
-print('green', 'Market urls info', formatedUrlsInfo);
+
+// логирум данный
+print('green', 'Urls info', formatedUrlsInfo);
+
+// пишем данные в файл
+writeFile('./urlsInfo', formatedUrlsInfo);
