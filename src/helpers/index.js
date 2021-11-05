@@ -21,5 +21,13 @@ export const writeFile = (filename, filepath, data) => {
 const printToConsole = console.log;
 
 export const log = (color, title, value) => {
-    printToConsole(`${chalk[color](`[${title}]: `)}${chalk[color](value)}`);
+    if (typeof value !== 'string') {
+        value = JSON.stringify(value);
+    }
+
+    printToConsole(
+        `${chalk[color](`[${title.toUpperCase()}] `)}${chalk.white(
+            value.replace('\n', ''),
+        )}`,
+    );
 };

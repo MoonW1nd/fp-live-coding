@@ -2,51 +2,53 @@ import { log, readFile, writeFile } from './helpers/index';
 
 console.clear();
 
-let fileData = null;
+log('green', 'Read file', '../data');
+
+let fileData = '';
 
 try {
-    fileData = readFile('../data');
-
-    log('green', 'Success file read', '../data');
+    fileData = readFile('./data');
 } catch (e) {
-    log('red', 'Fail file read', e);
+    log('red', 'Error', e.message);
 }
+
+const fileStrings = fileData.match(/[^\r\n]+/g) || [];
 
 const urlsInfo = [];
 
-if (fileData) {
-    const urlStrings = fileData.split('|');
+for (let i = 0; i < fileStrings.length; i++) {
+    let parsedUrl;
 
-    for (let i = 0; i < urlStrings.length; i++) {
-        const url = new URL(urlStrings[i]);
+    try {
+        parsedUrl = new URL(fileStrings[i]);
+    } catch (e) {
+        log('red', 'Error', e.message);
+    }
 
-        if (
-            url.protocol === 'https:' &&
-            (url.hostname === 'market.yandex.ru' ||
-                url.hostname === 'pokupki.market.yandex.ru')
-        ) {
-            const { hostname, pathname, protocol, search } = url;
+    if (
+        parsedUrl &&
+        (parsedUrl.protocol === 'https:' || parsedUrl.protocol === 'http:') &&
+        parsedUrl.hostname === 'market.yandex.ru'
+    ) {
+        log('green', 'Get data from url', parsedUrl);
 
-            urlsInfo.push({
-                protocol,
-                hostname,
-                pathname,
-                query: search,
-            });
-        }
+        const { hostname, pathname, protocol, search } = parsedUrl;
+
+        urlsInfo.push({
+            protocol,
+            hostname,
+            pathname,
+            query: search,
+        });
     }
 }
 
-if (urlsInfo.length > 0) {
-    const formatedUrlsInfo = JSON.stringify(urlsInfo, null, 2);
+const formatedUrlsInfo = JSON.stringify(urlsInfo, null, 2);
 
-    log('green', 'Urls info', formatedUrlsInfo);
+log('green', 'Write url info', formatedUrlsInfo);
 
-    try {
-        writeFile('urlsInfo', './', formatedUrlsInfo);
-
-        log('green', 'Success file save', './urlsInfo');
-    } catch (e) {
-        log('red', 'Error file save', './urlsInfo');
-    }
+try {
+    writeFile('urlsInfo', './', formatedUrlsInfo);
+} catch (e) {
+    log('red', 'Error', e.message);
 }
