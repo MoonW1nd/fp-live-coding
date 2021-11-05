@@ -21,5 +21,5 @@ export const writeFile = (filename, filepath, data) => {
 const printToConsole = console.log;
 
 export const log = (color, title, value) => {
-    printToConsole(`${chalk[color](`[${title}]\n`)}${chalk[color](value)}`);
+    printToConsole(`${chalk[color](`[${title}]: `)}${chalk[color](value)}`);
 };

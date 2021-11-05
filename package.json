@@ -1,11 +1,11 @@
 {
   "name": "livecoding",
   "version": "1.0.0",
-  "description": "FP livecoding example SHRI 2021",
-  "main": "index.mjs",
+  "description": "FP livecoding example SHRI",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node -r esm ./index.js",
-    "watch": "nodemon -q -r esm ./index.js",
+    "start": "node -r esm ./src/index.js",
+    "watch": "nodemon -q -r esm ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "moonw1nd",
@@ -17,10 +17,13 @@
   },
   "devDependencies": {
     "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^5.1.0",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "prettier": "^2.4.1"
   }
 }
