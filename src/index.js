@@ -4,9 +4,9 @@ console.clear();
 
 const path = process.env.FILE_PATH;
 
-log('green', 'Read file', path);
-
 let fileData = '';
+
+log('green', 'Read file', path);
 
 try {
     fileData = readFile(path);
@@ -14,15 +14,15 @@ try {
     log('red', 'Error', e.message);
 }
 
-const fileStrings = fileData.match(/[^\r\n]+/g) || [];
+const urls = fileData.match(/[^\r\n]+/g) || [];
 
 const urlsInfo = [];
 
-for (let i = 0; i < fileStrings.length; i++) {
+for (let i = 0; i < urls.length; i++) {
     let parsedUrl;
 
     try {
-        parsedUrl = new URL(fileStrings[i]);
+        parsedUrl = new URL(urls[i]);
     } catch (e) {
         log('red', 'Error', e.message);
     }
@@ -32,8 +32,6 @@ for (let i = 0; i < fileStrings.length; i++) {
         (parsedUrl.protocol === 'https:' || parsedUrl.protocol === 'http:') &&
         parsedUrl.hostname === 'market.yandex.ru'
     ) {
-        log('green', 'Get data from url', parsedUrl);
-
         const { hostname, pathname, protocol, search } = parsedUrl;
 
         urlsInfo.push({
@@ -47,7 +45,7 @@ for (let i = 0; i < fileStrings.length; i++) {
 
 const formatedUrlsInfo = JSON.stringify(urlsInfo, null, 2);
 
-log('green', 'Write url info', formatedUrlsInfo);
+log('green', 'Write to file', formatedUrlsInfo);
 
 try {
     writeFile('urlsInfo.json', '../', formatedUrlsInfo);
