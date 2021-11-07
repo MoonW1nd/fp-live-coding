@@ -2,12 +2,14 @@ import { log, readFile, writeFile } from './helpers/index';
 
 console.clear();
 
-log('green', 'Read file', '../data');
+const path = process.env.FILE_PATH;
+
+log('green', 'Read file', path);
 
 let fileData = '';
 
 try {
-    fileData = readFile('./data');
+    fileData = readFile(path);
 } catch (e) {
     log('red', 'Error', e.message);
 }
@@ -48,7 +50,7 @@ const formatedUrlsInfo = JSON.stringify(urlsInfo, null, 2);
 log('green', 'Write url info', formatedUrlsInfo);
 
 try {
-    writeFile('urlsInfo', './', formatedUrlsInfo);
+    writeFile('urlsInfo.json', '../', formatedUrlsInfo);
 } catch (e) {
     log('red', 'Error', e.message);
 }
