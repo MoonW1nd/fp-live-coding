@@ -1,54 +1,85 @@
+import {
+    allPass,
+    anyPass,
+    applySpec,
+    complement,
+    compose,
+    curry,
+    equals,
+    filter,
+    isNil,
+    map,
+    match,
+    partial,
+    partialRight,
+    prop,
+    tap,
+    tryCatch,
+} from 'ramda';
 import { log, readFile, writeFile } from './helpers/index';
 
 console.clear();
 
-const path = process.env.FILE_PATH;
+const getMessage = prop('message');
+const getHostname = prop('hostname');
+const getProtocol = prop('protocol');
+const getPathname = prop('pathname');
+const getSearch = prop('search');
 
-let fileData = '';
+const curriedLog = curry(log);
+const logInfo = curriedLog('green');
+const logError = curriedLog('red');
+const logErrorWithTitle = logError('Error');
+const logErrorMessage = compose(logErrorWithTitle, getMessage);
+const logReadFile = logInfo('Read file');
+const logWriteUrlInfo = logInfo('Write url info');
 
-log('green', 'Read file', path);
+const formatUrlsInfo = partialRight(JSON.stringify, [null, 2]);
+const writeUrlsInfo = partial(writeFile, ['urlsInfo.json', '../']);
 
-try {
-    fileData = readFile(path);
-} catch (e) {
-    log('red', 'Error', e.message);
-}
+const isMarketHostname = equals('market.yandex.ru');
+const isMarketHostUrl = compose(isMarketHostname, getHostname);
 
-const urls = fileData.match(/[^\r\n]+/g) || [];
+const isHttpProtocol = equals('http:');
+const isHttpsProtocol = equals('https:');
 
-const urlsInfo = [];
+const isHttpUrl = compose(isHttpProtocol, getProtocol);
+const isHttpsUrl = compose(isHttpsProtocol, getProtocol);
+const hasUrl = complement(isNil);
 
-for (let i = 0; i < urls.length; i++) {
-    let parsedUrl;
+const isHttpOrHttpsUrl = anyPass([isHttpUrl, isHttpsUrl]);
 
-    try {
-        parsedUrl = new URL(urls[i]);
-    } catch (e) {
-        log('red', 'Error', e.message);
-    }
+const isMarketUrl = allPass([hasUrl, isHttpOrHttpsUrl, isMarketHostUrl]);
 
-    if (
-        parsedUrl &&
-        (parsedUrl.protocol === 'https:' || parsedUrl.protocol === 'http:') &&
-        parsedUrl.hostname === 'market.yandex.ru'
-    ) {
-        const { hostname, pathname, protocol, search } = parsedUrl;
+const getUrlInfo = applySpec({
+    hostname: getHostname,
+    protocol: getProtocol,
+    pathname: getPathname,
+    query: getSearch,
+});
 
-        urlsInfo.push({
-            protocol,
-            hostname,
-            pathname,
-            query: search,
-        });
-    }
-}
+const parseUrl = (url) => new URL(url);
+const splitFileByLine = match(/[^\r\n]+/g);
 
-const formatedUrlsInfo = JSON.stringify(urlsInfo, null, 2);
+const createSafeFunction = (fn) => tryCatch(fn, logErrorMessage);
+const readFileSafe = createSafeFunction(readFile);
+const parseUrlSafe = createSafeFunction(parseUrl);
+const writeUrlsInfoSafe = createSafeFunction(writeUrlsInfo);
 
-log('green', 'Write to file', formatedUrlsInfo);
+const getMarketUlrsInfo = compose(
+    map(getUrlInfo),
+    filter(isMarketUrl),
+    map(parseUrlSafe),
+);
 
-try {
-    writeFile('urlsInfo.json', '../', formatedUrlsInfo);
-} catch (e) {
-    log('red', 'Error', e.message);
-}
+const app = compose(
+    writeUrlsInfoSafe,
+    tap(logWriteUrlInfo),
+    formatUrlsInfo,
+    getMarketUlrsInfo,
+    splitFileByLine,
+    readFileSafe,
+    tap(logReadFile),
+);
+
+app(process.env.FILE_PATH);
