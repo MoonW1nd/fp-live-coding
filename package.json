@@ -4,9 +4,8 @@
   "description": "FP livecoding example SHRI",
   "main": "src/index.js",
   "scripts": {
-    "start": "node -r esm ./src/index.js",
-    "watch": "FILE_PATH=$PWD/data nodemon -q -r esm ./src/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "FILE_PATH=$PWD/data node -r esm ./src/index.js",
+    "watch": "FILE_PATH=$PWD/data nodemon -q -r esm ./src/"
   },
   "author": "moonw1nd",
   "license": "MIT",
