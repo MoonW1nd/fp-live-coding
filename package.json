@@ -10,6 +10,7 @@
   "author": "moonw1nd",
   "license": "MIT",
   "dependencies": {
+    "@types/ramda": "^0.28.15",
     "chalk": "^4.1.1",
     "esm": "^3.2.25",
     "is-url": "^1.2.4",

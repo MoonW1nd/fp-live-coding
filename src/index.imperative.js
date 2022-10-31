@@ -4,7 +4,7 @@ console.clear();
 
 const path = process.env.FILE_PATH;
 
-let fileData = '';
+let fileData;
 
 log('green', 'Read file', path);
 
