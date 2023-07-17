@@ -17,3 +17,4 @@
 ### Полезные ссылки
 
 [Документация Ramda](https://ramdajs.com/docs/)
+[Шпаргалка по функциональному программированию](https://habr.com/ru/companies/yandex/articles/547786/)
