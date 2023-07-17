@@ -1,0 +1,14 @@
+[
+  {
+    "time": "2023-07-12 22:14:19,812",
+    "type": "WARN",
+    "component": "search-interfaces-infra",
+    "message": "Not found СI_TOKEN"
+  },
+  {
+    "time": "2023-07-12 22:14:19,813",
+    "type": "ERROR",
+    "component": "search-interfaces-infra",
+    "message": "403 Forbidden CI API"
+  }
+]

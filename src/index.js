@@ -1,54 +1,81 @@
+import {
+    allPass,
+    anyPass,
+    applySpec,
+    compose,
+    curry,
+    equals,
+    filter,
+    map,
+    match,
+    nth,
+    partial,
+    partialRight,
+    prop,
+    tap,
+    tryCatch,
+} from 'ramda';
 import { log, readFile, writeFile } from './helpers/index';
 
 console.clear();
 
-const path = process.env.FILE_PATH;
+const curriedLog = curry(log);
+const logRed = curriedLog('red');
+const logGreen = curriedLog('green');
+const logError = logRed('Error');
+const logReadFile = logGreen('Read file');
+const logWriteFile = logGreen('Write file');
 
-let fileData;
+const formatLogs = partialRight(JSON.stringify, [null, 2]);
+const writeErrorLogs = partial(writeFile, ['errorsLog.json', '../']);
 
-log('green', 'Read file', path);
+const getMessage = prop('message');
+const getType = prop('type');
+const getComponent = prop('component');
+const getParsedLogTime = nth(1);
+const getParsedLogType = nth(2);
+const getParsedLogComponent = nth(3);
+const getParsedLogMassage = nth(4);
 
-try {
-    fileData = readFile(path);
-} catch (e) {
-    log('red', 'Error', e.message);
-}
+const logErrorMessage = compose(logError, getMessage);
 
-const urls = fileData.match(/[^\r\n]+/g) || [];
+const isError = equals('ERROR');
+const isWarn = equals('WARN');
+const isInfraComponent = equals('search-interfaces-infra');
+const isErrorLog = compose(isError, getType);
+const isWarnLog = compose(isWarn, getType);
+const isInfraComponentLog = compose(isInfraComponent, getComponent);
 
-const urlsInfo = [];
+const isErrorOrWarnLog = anyPass([isErrorLog, isWarnLog]);
+const isInfraErrorLog = allPass([isErrorOrWarnLog, isInfraComponentLog]);
 
-for (let i = 0; i < urls.length; i++) {
-    let parsedUrl;
+const splitFileByLine = match(/[^\r\n]+/g);
+const parseLog = match(/([\d-:,\s]+)\s\(.+\)\s(\w+)\s+\(([^)]+)\)\s(.+)/);
+const getParsedLogInfo = applySpec({
+    time: getParsedLogTime,
+    type: getParsedLogType,
+    component: getParsedLogComponent,
+    message: getParsedLogMassage,
+});
 
-    try {
-        parsedUrl = new URL(urls[i]);
-    } catch (e) {
-        log('red', 'Error', e.message);
-    }
+const createSafeFunction = (fn) => tryCatch(fn, logErrorMessage);
+const readFileSafe = createSafeFunction(readFile);
+const writeErrorLogsSafe = createSafeFunction(writeErrorLogs);
 
-    if (
-        parsedUrl &&
-        (parsedUrl.protocol === 'https:' || parsedUrl.protocol === 'http:') &&
-        parsedUrl.hostname === 'market.yandex.ru'
-    ) {
-        const { hostname, pathname, protocol, search } = parsedUrl;
+const getInfraErrorsLog = compose(
+    filter(isInfraErrorLog),
+    map(getParsedLogInfo),
+    map(parseLog),
+);
 
-        urlsInfo.push({
-            protocol,
-            hostname,
-            pathname,
-            query: search,
-        });
-    }
-}
+const app = compose(
+    writeErrorLogsSafe,
+    tap(logWriteFile),
+    formatLogs,
+    getInfraErrorsLog,
+    splitFileByLine,
+    readFileSafe,
+    tap(logReadFile),
+);
 
-const formatedUrlsInfo = JSON.stringify(urlsInfo, null, 2);
-
-log('green', 'Write to file', formatedUrlsInfo);
-
-try {
-    writeFile('urlsInfo.json', '../', formatedUrlsInfo);
-} catch (e) {
-    log('red', 'Error', e.message);
-}
+app(process.env.FILE_PATH);

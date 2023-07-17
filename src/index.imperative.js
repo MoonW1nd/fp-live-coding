@@ -4,9 +4,9 @@ console.clear();
 
 const path = process.env.FILE_PATH;
 
-let fileData;
-
 log('green', 'Read file', path);
+
+let fileData;
 
 try {
     fileData = readFile(path);
@@ -14,41 +14,36 @@ try {
     log('red', 'Error', e.message);
 }
 
-const urls = fileData.match(/[^\r\n]+/g) || [];
+const logs = fileData.match(/[^\r\n]+/g);
 
-const urlsInfo = [];
+const logsWithErrors = [];
 
-for (let i = 0; i < urls.length; i++) {
-    let parsedUrl;
+for (let i = 0; i < logs.length; i++) {
+    const logData = logs[i].match(
+        /([\d-:,\s]+)\s\(.+\)\s(\w+)\s+\(([^)]+)\)\s(.+)/,
+    );
 
-    try {
-        parsedUrl = new URL(urls[i]);
-    } catch (e) {
-        log('red', 'Error', e.message);
-    }
+    const logInfo = {
+        time: logData[1],
+        type: logData[2],
+        component: logData[3],
+        message: logData[4],
+    };
 
     if (
-        parsedUrl &&
-        (parsedUrl.protocol === 'https:' || parsedUrl.protocol === 'http:') &&
-        parsedUrl.hostname === 'market.yandex.ru'
+        (logInfo.type === 'ERROR' || logInfo.type === 'WARN') &&
+        logInfo.component === 'search-interfaces-infra'
     ) {
-        const { hostname, pathname, protocol, search } = parsedUrl;
-
-        urlsInfo.push({
-            protocol,
-            hostname,
-            pathname,
-            query: search,
-        });
+        logsWithErrors.push(logInfo);
     }
 }
 
-const formatedUrlsInfo = JSON.stringify(urlsInfo, null, 2);
+const formatedLogs = JSON.stringify(logsWithErrors, null, 2);
 
-log('green', 'Write to file', formatedUrlsInfo);
+log('green', 'Write to file', formatedLogs);
 
 try {
-    writeFile('urlsInfo.json', '../', formatedUrlsInfo);
+    writeFile('errorsLog.json', '../', formatedLogs);
 } catch (e) {
     log('red', 'Error', e.message);
 }

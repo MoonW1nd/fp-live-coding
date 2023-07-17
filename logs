@@ -1,0 +1,577 @@
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,812 (0.000s) WARN   (search-interfaces-infra) Not found СI_TOKEN
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,813 (0.000s) ERROR  (search-interfaces-infra) 403 Forbidden CI API
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
+2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem
+2023-07-12 22:14:19,814 (0.001s) DEBUG  (test) {957243bb:3} Calling remote method Yandex Shri
+2023-07-12 22:14:19,822 (0.008s) DEBUG  (test) {957243bb:4} Calling remote method Hello Students
+2023-07-12 22:14:19,827 (0.006s) INFO   (test) Execute binary Yandex/shri/search-interfaces-infra/fp-style/bin
+2023-07-12 22:14:19,828 (0.000s) INFO   (shri-2023) Make folder /fp/is/awesome
+2023-07-12 22:14:19,828 (0.000s) DEBUG  (shri-2023) {957243bb:5} Calling remote method imperative-to-functional
+2023-07-12 22:14:21,677 (0.000s) DEBUG  (shri-2023) {48104b34:2} Calling remote method live-coding
+2023-07-12 22:14:21,681 (0.004s) INFO   (yandex-market) [43657db3] Running: live-conding
+2023-07-12 22:14:21,689 (0.008s) DEBUG  (yandex-market) [43657db3] PID=1111 OUT=-1 ERR=-1
+2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
+2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
+2023-07-12 22:14:19,811 (0.002s) DEBUG  (linux) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+2023-07-12 22:14:19,811 (0.001s) INFO   (linters) Switched to subsystem test
+2023-07-12 22:14:19,812 (0.000s) INFO   (filesystem) Switched to subsystem Yandex SHRI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex Seach
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Yandex CI
+2023-07-12 22:14:19,812 (0.000s) INFO   (yandex-serch) Switched to subsystem Lorem Ipsum is simply dummy text of the printing and typesetting industry
+2023-07-12 22:14:19,812 (0.000s) INFO   (tunneler) Switched to subsystem Aldus PageMaker including versions of Lorem Ipsum
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem Contrary to popular belief, Lorem Ipsum is not simply random text.
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
+2023-07-12 22:14:19,813 (0.000s) INFO   (yandex-serch) Switched to subsystem There are many variations of passages of Lorem Ipsum available
