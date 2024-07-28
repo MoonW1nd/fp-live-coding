@@ -5,17 +5,18 @@ console.clear();
 
 const curriedLog = curry(log);
 const logGreen = curriedLog('green');
+const logRed = curriedLog('red');
 
 const path = process.env.FILE_PATH;
 
 logGreen('Read file', path);
-// поменял на logGreen
+
 let fileData;
 
 try {
     fileData = readFile(path);
 } catch (e) {
-    log('red', 'Error', e.message);
+    logRed('Error', e.message);
 }
 
 const logs = fileData.match(/[^\r\n]+/g);
@@ -44,10 +45,10 @@ for (let i = 0; i < logs.length; i++) {
 
 const formatedLogs = JSON.stringify(logsWithErrors, null, 2);
 
-log('green', 'Write to file', formatedLogs);
+logGreen('Write to file', formatedLogs);
 
 try {
     writeFile('errorsLog.json', '../', formatedLogs);
 } catch (e) {
-    log('red', 'Error', e.message);
+    logRed('Error', e.message);
 }
