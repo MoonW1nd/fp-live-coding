@@ -9,7 +9,7 @@ const logGreen = curriedLog('green');
 const path = process.env.FILE_PATH;
 
 logGreen('Read file', path);
-
+// поменял на logGreen
 let fileData;
 
 try {
