@@ -2,9 +2,11 @@ import { log, readFile, writeFile } from './helpers/index';
 
 console.clear();
 
+const curriedLog = curry(log);
+
 const path = process.env.FILE_PATH;
 
-log('green', 'Read file', path);
+curriedLog('green')('Read file', path);
 
 let fileData;
 
