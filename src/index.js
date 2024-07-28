@@ -16,6 +16,7 @@ const getMessage = prop('message');
 const splitFileByLine  = match(/[^\r\n]+/g);
 
 const logErrorMessage = compose(logError, getMessage);
+const parseLog = match(/([\d-:,\s]+)\s\(.+\)\s(\w+)\s+\(([^)]+)\)\s(.+)/);
 
 const path = process.env.FILE_PATH;
 
@@ -34,9 +35,7 @@ const logs = splitFileByLine(fileData);
 const logsWithErrors = [];
 
 for (let i = 0; i < logs.length; i++) {
-    const logData = logs[i].match(
-        /([\d-:,\s]+)\s\(.+\)\s(\w+)\s+\(([^)]+)\)\s(.+)/,
-    );
+    const logData = parseLog(logs[i]);
 
     const logInfo = {
         time: logData[1],
