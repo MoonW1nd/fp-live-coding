@@ -1,4 +1,4 @@
-import { curry } from 'ramda';
+import { curry, prop } from 'ramda';
 import { log, readFile, writeFile } from './helpers/index';
 
 console.clear();
@@ -7,16 +7,22 @@ const curriedLog = curry(log);
 const logGreen = curriedLog('green');
 const logRed = curriedLog('red');
 
+const logError = logRed('Error');
+const logReadFile = logGreen('Read file');
+const logWriteFile = logGreen('Write file');
+
+const getMessage = prop('message');
+
 const path = process.env.FILE_PATH;
 
-logGreen('Read file', path);
+logReadFile(path);
 
 let fileData;
 
 try {
     fileData = readFile(path);
 } catch (e) {
-    logRed('Error', e.message);
+    logError(getMessage(e));
 }
 
 const logs = fileData.match(/[^\r\n]+/g);
@@ -45,10 +51,10 @@ for (let i = 0; i < logs.length; i++) {
 
 const formatedLogs = JSON.stringify(logsWithErrors, null, 2);
 
-logGreen('Write to file', formatedLogs);
+logWriteFile(formatedLogs);
 
 try {
     writeFile('errorsLog.json', '../', formatedLogs);
 } catch (e) {
-    logRed('Error', e.message);
+    logError(e.message);
 }
