@@ -1,4 +1,4 @@
-import { curry, prop } from 'ramda';
+import { compose, curry, prop } from 'ramda';
 import { log, readFile, writeFile } from './helpers/index';
 
 console.clear();
@@ -13,6 +13,9 @@ const logWriteFile = logGreen('Write file');
 
 const getMessage = prop('message');
 
+const logErrorMessage = compose(logError, getMessage);
+// именно в порядке сначала getMessage потом logError у compose оно идет в порядке наоборот
+
 const path = process.env.FILE_PATH;
 
 logReadFile(path);
@@ -22,7 +25,7 @@ let fileData;
 try {
     fileData = readFile(path);
 } catch (e) {
-    logError(getMessage(e));
+    logErrorMessage(e);
 }
 
 const logs = fileData.match(/[^\r\n]+/g);
@@ -56,5 +59,5 @@ logWriteFile(formatedLogs);
 try {
     writeFile('errorsLog.json', '../', formatedLogs);
 } catch (e) {
-    logError(e.message);
+    logErrorMessage(e);
 }
