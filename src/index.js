@@ -1,3 +1,4 @@
+import { curry } from 'ramda';
 import { log, readFile, writeFile } from './helpers/index';
 
 console.clear();
