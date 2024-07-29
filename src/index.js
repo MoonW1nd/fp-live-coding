@@ -1,4 +1,4 @@
-import { compose, curry, prop, match, equals } from 'ramda';
+import { compose, curry, prop, match, equals, anyPass, allPass } from 'ramda';
 import { log, readFile, writeFile } from './helpers/index';
 
 console.clear();
@@ -27,6 +27,9 @@ const isErrorLog = compose(isError, getType);
 const isWarnLog = compose(isWarn, getType);
 const isInfraComponentLog = compose(isInfraComponent, getComponent);
 
+const isErrorOrWarnLog = anyPass([isWarnLog, isErrorLog]);
+const isInfraErrorLog = allPass([isErrorOrWarnLog, isInfraComponentLog]);
+
 const path = process.env.FILE_PATH;
 
 logReadFile(path);
@@ -53,10 +56,7 @@ for (let i = 0; i < logs.length; i++) {
         message: logData[4],
     };
 
-    if (
-        (isErrorLog(logInfo) || isWarnLog(logInfo)) &&
-        isInfraComponentLog(logInfo)
-    ) {
+    if (isInfraErrorLog(logInfo)) {
         logsWithErrors.push(logInfo);
     }
 }
