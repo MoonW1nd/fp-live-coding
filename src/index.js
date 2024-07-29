@@ -1,4 +1,4 @@
-import { compose, curry, prop, match, equals, anyPass, allPass, nth, applySpec } from 'ramda';
+import { compose, curry, prop, match, equals, anyPass, allPass, nth, applySpec, filter, map } from 'ramda';
 import { log, readFile, writeFile } from './helpers/index';
 
 console.clear();
@@ -42,6 +42,12 @@ const getLogInfo = applySpec({
     message: getParsedLogMessage,
 });
 
+const getInfraErrorsLog = compose(
+    filter(isInfraErrorLog),
+    map(getLogInfo),
+    map(parseLog),
+);
+
 const path = process.env.FILE_PATH;
 
 logReadFile(path);
@@ -56,17 +62,7 @@ try {
 
 const logs = splitFileByLine(fileData);
 
-const logsWithErrors = [];
-
-for (let i = 0; i < logs.length; i++) {
-    const logData = parseLog(logs[i]);
-
-    const logInfo = getLogInfo(logData);
-
-    if (isInfraErrorLog(logInfo)) {
-        logsWithErrors.push(logInfo);
-    }
-}
+const logsWithErrors = getInfraErrorsLog(logs);
 
 const formatedLogs = JSON.stringify(logsWithErrors, null, 2);
 
