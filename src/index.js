@@ -3,6 +3,9 @@ import { log, readFile, writeFile } from './helpers/index';
 
 console.clear();
 
+const formatLogs = partialRight(JSON.stringify, [null, 2]);
+const writeErrorLogs = partial(writeFile,['errorsLog.json', '../']);
+
 const curriedLog = curry(log);
 const logGreen = curriedLog('green');
 const logRed = curriedLog('red');
@@ -64,13 +67,9 @@ const logs = splitFileByLine(fileData);
 
 const logsWithErrors = getInfraErrorsLog(logs);
 
-const formatLogs = partialRight(JSON.stringify, [null, 2]);
-
 const formatedLogs = formatLogs(logsWithErrors);
 
 logWriteFile(formatedLogs);
-
-const writeErrorLogs = partial(writeFile,['errorsLog.json', '../']);
 
 try {
     writeErrorLogs(formatedLogs);
