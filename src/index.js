@@ -1,4 +1,4 @@
-import { compose, curry, prop, match, equals, anyPass, allPass } from 'ramda';
+import { compose, curry, prop, match, equals, anyPass, allPass, nth } from 'ramda';
 import { log, readFile, writeFile } from './helpers/index';
 
 console.clear();
@@ -14,6 +14,11 @@ const logWriteFile = logGreen('Write file');
 const getMessage = prop('message');
 const getType = prop('type');
 const getComponent = prop('component');
+
+const getParsedLogTime = nth(1);
+const getParsedLogType = nth(2);
+const getParsedLogComponent = nth(3);
+const getParsedLogMessage = nth(4);
 
 const splitFileByLine  = match(/[^\r\n]+/g);
 
@@ -50,10 +55,10 @@ for (let i = 0; i < logs.length; i++) {
     const logData = parseLog(logs[i]);
 
     const logInfo = {
-        time: logData[1],
-        type: logData[2],
-        component: logData[3],
-        message: logData[4],
+        time: getParsedLogTime(logData),
+        type: getParsedLogType(logData),
+        component: getParsedLogComponent(logData),
+        message: getParsedLogMessage(logData),
     };
 
     if (isInfraErrorLog(logInfo)) {
