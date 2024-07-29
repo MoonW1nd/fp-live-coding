@@ -1,4 +1,4 @@
-import { compose, curry, prop, match, equals, anyPass, allPass, nth, applySpec, filter, map, partial, partialRight } from 'ramda';
+import { compose, curry, prop, match, equals, anyPass, allPass, nth, applySpec, filter, map, partial, partialRight, tryCatch } from 'ramda';
 import { log, readFile, writeFile } from './helpers/index';
 
 console.clear();
@@ -51,17 +51,15 @@ const getInfraErrorsLog = compose(
     map(parseLog),
 );
 
+const createSafeFunction = (fn) => tryCatch(fn, logErrorMessage);
+const readFileSafe = createSafeFunction(readFile);
+const writeErrorLogsSafe = createSafeFunction(writeErrorLogs);
+
 const path = process.env.FILE_PATH;
 
 logReadFile(path);
 
-let fileData;
-
-try {
-    fileData = readFile(path);
-} catch (e) {
-    logErrorMessage(e);
-}
+const fileData = readFileSafe(path);
 
 const logs = splitFileByLine(fileData);
 
@@ -71,8 +69,4 @@ const formatedLogs = formatLogs(logsWithErrors);
 
 logWriteFile(formatedLogs);
 
-try {
-    writeErrorLogs(formatedLogs);
-} catch (e) {
-    logErrorMessage(e);
-}
+writeErrorLogsSafe(formatedLogs);
