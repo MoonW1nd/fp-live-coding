@@ -1,4 +1,4 @@
-import { compose, curry, prop, match, equals, anyPass, allPass, nth, applySpec, filter, map } from 'ramda';
+import { compose, curry, prop, match, equals, anyPass, allPass, nth, applySpec, filter, map, partial } from 'ramda';
 import { log, readFile, writeFile } from './helpers/index';
 
 console.clear();
@@ -68,8 +68,10 @@ const formatedLogs = JSON.stringify(logsWithErrors, null, 2);
 
 logWriteFile(formatedLogs);
 
+const writeErrorLogs = partial(writeFile,['errorsLog.json', '../']);
+
 try {
-    writeFile('errorsLog.json', '../', formatedLogs);
+    writeErrorLogs(formatedLogs);
 } catch (e) {
     logErrorMessage(e);
 }
