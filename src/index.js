@@ -1,4 +1,4 @@
-import { compose, curry, prop, match, equals, anyPass, allPass, nth, applySpec, filter, map, partial, partialRight, tryCatch } from 'ramda';
+import { compose, curry, prop, match, equals, anyPass, allPass, nth, applySpec, filter, map, partial, partialRight, tryCatch, tap } from 'ramda';
 import { log, readFile, writeFile } from './helpers/index';
 
 console.clear();
@@ -55,18 +55,15 @@ const createSafeFunction = (fn) => tryCatch(fn, logErrorMessage);
 const readFileSafe = createSafeFunction(readFile);
 const writeErrorLogsSafe = createSafeFunction(writeErrorLogs);
 
-const path = process.env.FILE_PATH;
+const app = compose(
+    writeErrorLogsSafe,
+    tap(logWriteFile),
+    formatLogs,
+    getInfraErrorsLog,
+    splitFileByLine,
+    readFileSafe,
+    tap(logReadFile),
+);
+// в данном случае у нас здесь отсутствует логирование ошибок п.ч. оно ведет себя как процедура а не как функция т.е. она принимает в себя данные но ничего не возвращает поэтому мы через tap. Она принимает данные и прокидывает дальше по флоу
 
-logReadFile(path);
-
-const fileData = readFileSafe(path);
-
-const logs = splitFileByLine(fileData);
-
-const logsWithErrors = getInfraErrorsLog(logs);
-
-const formatedLogs = formatLogs(logsWithErrors);
-
-logWriteFile(formatedLogs);
-
-writeErrorLogsSafe(formatedLogs);
+app(process.env.FILE_PATH)
