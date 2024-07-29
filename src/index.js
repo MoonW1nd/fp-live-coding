@@ -1,4 +1,4 @@
-import { compose, curry, prop, match, equals, anyPass, allPass, nth, applySpec, filter, map, partial } from 'ramda';
+import { compose, curry, prop, match, equals, anyPass, allPass, nth, applySpec, filter, map, partial, partialRight } from 'ramda';
 import { log, readFile, writeFile } from './helpers/index';
 
 console.clear();
@@ -64,7 +64,9 @@ const logs = splitFileByLine(fileData);
 
 const logsWithErrors = getInfraErrorsLog(logs);
 
-const formatedLogs = JSON.stringify(logsWithErrors, null, 2);
+const formatLogs = partialRight(JSON.stringify, [null, 2]);
+
+const formatedLogs = formatLogs(logsWithErrors);
 
 logWriteFile(formatedLogs);
 
