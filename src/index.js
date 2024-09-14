@@ -1,43 +1,32 @@
-import {
-    allPass,
-    anyPass,
-    applySpec,
-    compose,
-    curry,
-    equals,
-    filter,
-    map,
-    match,
-    nth,
-    partial,
-    partialRight,
-    prop,
-    tap,
-    tryCatch,
-} from 'ramda';
+import { compose, curry, prop, match, equals, anyPass, allPass, nth, applySpec, filter, map, partial, partialRight, tryCatch, tap } from 'ramda';
 import { log, readFile, writeFile } from './helpers/index';
 
 console.clear();
 
+const formatLogs = partialRight(JSON.stringify, [null, 2]);
+const writeErrorLogs = partial(writeFile,['errorsLog.json', '../']);
+
 const curriedLog = curry(log);
-const logRed = curriedLog('red');
 const logGreen = curriedLog('green');
+const logRed = curriedLog('red');
+
 const logError = logRed('Error');
 const logReadFile = logGreen('Read file');
 const logWriteFile = logGreen('Write file');
 
-const formatLogs = partialRight(JSON.stringify, [null, 2]);
-const writeErrorLogs = partial(writeFile, ['errorsLog.json', '../']);
-
 const getMessage = prop('message');
 const getType = prop('type');
 const getComponent = prop('component');
+
 const getParsedLogTime = nth(1);
 const getParsedLogType = nth(2);
 const getParsedLogComponent = nth(3);
-const getParsedLogMassage = nth(4);
+const getParsedLogMessage = nth(4);
+
+const splitFileByLine  = match(/[^\r\n]+/g);
 
 const logErrorMessage = compose(logError, getMessage);
+const parseLog = match(/([\d-:,\s]+)\s\(.+\)\s(\w+)\s+\(([^)]+)\)\s(.+)/);
 
 const isError = equals('ERROR');
 const isWarn = equals('WARN');
@@ -46,27 +35,25 @@ const isErrorLog = compose(isError, getType);
 const isWarnLog = compose(isWarn, getType);
 const isInfraComponentLog = compose(isInfraComponent, getComponent);
 
-const isErrorOrWarnLog = anyPass([isErrorLog, isWarnLog]);
+const isErrorOrWarnLog = anyPass([isWarnLog, isErrorLog]);
 const isInfraErrorLog = allPass([isErrorOrWarnLog, isInfraComponentLog]);
 
-const splitFileByLine = match(/[^\r\n]+/g);
-const parseLog = match(/([\d-:,\s]+)\s\(.+\)\s(\w+)\s+\(([^)]+)\)\s(.+)/);
-const getParsedLogInfo = applySpec({
+const getLogInfo = applySpec({
     time: getParsedLogTime,
     type: getParsedLogType,
     component: getParsedLogComponent,
-    message: getParsedLogMassage,
+    message: getParsedLogMessage,
 });
+
+const getInfraErrorsLog = compose(
+    filter(isInfraErrorLog),
+    map(getLogInfo),
+    map(parseLog),
+);
 
 const createSafeFunction = (fn) => tryCatch(fn, logErrorMessage);
 const readFileSafe = createSafeFunction(readFile);
 const writeErrorLogsSafe = createSafeFunction(writeErrorLogs);
-
-const getInfraErrorsLog = compose(
-    filter(isInfraErrorLog),
-    map(getParsedLogInfo),
-    map(parseLog),
-);
 
 const app = compose(
     writeErrorLogsSafe,
@@ -78,4 +65,4 @@ const app = compose(
     tap(logReadFile),
 );
 
-app(process.env.FILE_PATH);
+app(process.env.FILE_PATH)

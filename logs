@@ -23,6 +23,7 @@
 2023-07-12 22:14:21,694 (0.005s) INFO   (yandex-market) [d08844ba] Running: vim
 2023-07-12 22:14:21,701 (0.007s) DEBUG  (yandex-market) [d08844ba] PID=2222 OUT=-1 ERR=-1
 2023-07-12 22:14:19,813 (0.000s) ERROR  (search-interfaces-infra) 403 Forbidden CI API
+2023-07-12 22:14:19,813 (0.000s) ERROR  (search-interfaces-infra) 403 Forbidden CI API 
 2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem The standard chunk of Lorem Ipsum used since the 1500s.
 2023-07-12 22:14:19,813 (0.000s) INFO   (test) Switched to subsystem Lorem Ipsum comes from sections 1.10.32 and 1.10.33
 2023-07-12 22:14:19,813 (0.000s) INFO   (test) generated Lorem Ipsum is therefore always free from repetition
